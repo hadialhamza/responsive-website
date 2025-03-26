@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* universal style */
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: poppins;
+}
+
+/* shared style */
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font {
+  color: rgb(58, 58, 58);
+  font-weight: 700;
+}
+
+/* header section style */
+#menu-bar {
+  display: none;
+}
+.header {
+  justify-content: space-between;
+  margin: 50px 30px auto 30px;
+}
+nav > ul > li {
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  margin-left: 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.nav-items {
+  gap: 35px;
+}
+.nav-title {
+  font-size: 1.5rem;
+}
+
+/* media query small device */
+
+@media screen and (max-width: 576px) {
+  #menu-bar {
+    display: block;
+  }
+  #search {
+    display: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .header {
+    justify-content: space-around;
+    text-align: center;
+  }
+}
+
+/* media query medium device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .header {
+    text-align: center;
+  }
+
+  .nav-bar {
+    text-wrap: nowrap;
+  }
+}
