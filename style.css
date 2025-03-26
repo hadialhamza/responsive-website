@@ -88,6 +88,75 @@ nav > ul > li > a {
   width: 100%;
 }
 
+.web-link-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.line {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.378%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+.web-link-items {
+  justify-content: space-around;
+  margin: 36px 60px;
+}
+
+/* main section styles */
+
+.card-section {
+  max-width: 1047px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.card-section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.card-image {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: rgb(24, 25, 31);
+  margin: 15px;
+}
+.card-price {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 15px;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(120, 120, 133);
+  margin: 15px;
+}
 /* media query small device */
 
 @media screen and (max-width: 576px) {
@@ -110,6 +179,13 @@ nav > ul > li > a {
   .hero-description {
     text-align: center;
   }
+  .web-link-items {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* media query medium device */
@@ -121,5 +197,19 @@ nav > ul > li > a {
 
   .nav-bar {
     text-wrap: nowrap;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-description {
+    text-align: center;
+  }
+  .web-link-items {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
