@@ -2,9 +2,6 @@
 
 /* universal style */
 body {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
   font-family: poppins;
 }
 
@@ -28,8 +25,9 @@ body {
   display: none;
 }
 .header {
+  max-width: 1440px;
+  margin: 0 auto;
   justify-content: space-between;
-  margin: 50px 30px auto 30px;
 }
 nav > ul > li {
   list-style: none;
@@ -48,6 +46,48 @@ nav > ul > li > a {
   font-size: 1.5rem;
 }
 
+/* hero section style */
+.hero-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.hero-description {
+  max-width: 580px;
+}
+.hero-title {
+  font-size: 3.25rem;
+  margin-bottom: 0px;
+}
+
+.button {
+  background-color: rgb(224, 44, 109);
+  border-radius: 41px;
+  width: 196px;
+  height: 44px;
+  padding: 10px 24px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero-image-container {
+  max-width: 475px;
+}
+
+.hero-image-bg {
+  background-image: url(images/Circle\ design.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 50px;
+}
+.hero-image {
+  width: 100%;
+}
+
 /* media query small device */
 
 @media screen and (max-width: 576px) {
@@ -62,6 +102,12 @@ nav > ul > li > a {
   }
   .header {
     justify-content: space-around;
+    text-align: center;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-description {
     text-align: center;
   }
 }
