@@ -109,7 +109,7 @@ nav > ul > li > a {
   margin: 36px 60px;
 }
 
-/* main section styles */
+/* section 1 styles */
 
 .card-section {
   max-width: 1047px;
@@ -157,6 +157,31 @@ nav > ul > li > a {
   color: rgb(120, 120, 133);
   margin: 15px;
 }
+
+/* section 2 styles */
+
+.features {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+.feature-image > img {
+  width: 100%;
+}
+
+.feature-description {
+  max-width: 610px;
+}
+
+.feature-title {
+  font-size: 2.375rem;
+}
+
+.feature-detais {
+  color: rgb(108, 108, 108);
+}
 /* media query small device */
 
 @media screen and (max-width: 576px) {
@@ -186,6 +211,14 @@ nav > ul > li > a {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .features {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .feature-description {
+    text-align: center;
+  }
 }
 
 /* media query medium device */
@@ -211,5 +244,13 @@ nav > ul > li > a {
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .features {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .feature-description {
+    text-align: center;
   }
 }
